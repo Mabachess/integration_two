@@ -17,11 +17,14 @@ public class BissextileTest {
     public void eightShouldReturnTrue(){
         assertTrue(Bissextile.apply(8));
 
-
     }
     @Test
     public void hundredShouldReturnFalse(){
         assertEquals(false, Bissextile.apply(100));
     }
+    @Test
+    public void fourhundredShouldReturnTrue() { assertEquals( true, Bissextile.apply(400 ));}
+    @Test
+    public void twothousandfourShouldReturnTrue()  {assertEquals( true, Bissextile.apply(2004));}
 }
 
